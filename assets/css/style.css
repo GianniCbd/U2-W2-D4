@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: #dc7979;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.navbar img {
+  width: 150px;
+  padding-left: 20px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+.navbar .nav-links li {
+  padding-right: 20px;
+  font-size: 2rem;
+  color: #f4f4f4;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+}
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+  color: #00b0b3;
+}
+
+.hero {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.myHeader {
+  background-color: rgb(209, 207, 207);
+  text-align: center;
+  padding: 100px 0;
+}
+.myHeader .titolo1 {
+  font-family: "Verdana", sans-serif;
+  font-weight: 300;
+  font-size: 56px;
+  color: rgba(71, 56, 56, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myHeader img {
+  float: left;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.myHeader .description {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.myHeader .buttons {
+  margin-top: 20px;
+}
+.myHeader .buttons .btn {
+  display: inline-block;
+  background-color: #dc7979;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.myHeader .buttons .btn:hover {
+  background-color: #00b0b3;
+  transform: scale(1.1);
+}
+.myHeader .buttons .discover:hover {
+  transform: scale(1.2);
+}
+.myHeader .buttons .login:hover {
+  transform: scale(1.1);
+}
+.myHeader .buttons .contact:hover {
+  transform: scale(1.1);
+}
+
+.contenitoreGriglia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+.contenitoreGriglia .griglia img {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */

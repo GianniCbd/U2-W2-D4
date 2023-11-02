@@ -1,0 +1,130 @@
+@import "./variables.scss";
+
+body {
+  margin: $margin-0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+}
+// -----navbar
+.navbar {
+  background-color: $bc-color-pink;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  img {
+    width: 150px;
+    padding-left: 20px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    li {
+      padding-right: 20px;
+      font-size: 2rem;
+      color: $myfont;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          color: #00b0b3;
+        }
+      }
+    }
+  }
+}
+
+// hero
+
+.hero {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.myHeader {
+  background-color: $bc-color;
+  text-align: center;
+  padding: 100px 0;
+
+  .titolo1 {
+    font: {
+      family: "Verdana", sans-serif;
+      weight: 300;
+      size: 56px;
+    }
+    color: scale-color($color-title, $lightness: 10%, $alpha: -20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .description {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .buttons {
+    margin-top: 20px;
+
+    .btn {
+      display: inline-block;
+      background-color: #dc7979;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        background-color: #00b0b3;
+        transform: scale(1.1);
+      }
+    }
+
+    .discover:hover {
+      transform: scale(1.2);
+    }
+
+    .login:hover {
+      transform: scale(1.1);
+    }
+
+    .contact:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.contenitoreGriglia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+
+  .griglia img {
+    width: 300px;
+  }
+}

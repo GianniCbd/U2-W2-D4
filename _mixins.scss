@@ -1,0 +1,23 @@
+@mixin title-big() {
+  font: {
+    family: "Verdana", sans-serif;
+    weight: 300;
+    size: 56px;
+  }
+}
+
+@mixin griglia() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+@mixin floating() {
+  border-radius: 50%;
+  box-shadow: 10px 0 10px grey;
+  border: 1px solid black;
+}

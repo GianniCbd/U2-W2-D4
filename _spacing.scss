@@ -1,0 +1,35 @@
+$spacing-values: (
+  sm: 0.5rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xl: 2rem,
+  xxl: 2.5rem
+);
+
+@each $size, $value in $spacing-values {
+  .padding-#{$size} {
+    padding: $value;
+  }
+}
+
+@each $size, $value in $spacing-values {
+  .margin-#{$size} {
+    margin: $value;
+  }
+}
+
+.padding-block {
+  display: block;
+}
+
+.padding-inline {
+  display: inline;
+}
+
+.margin-block {
+  display: block;
+}
+
+.margin-inline {
+  display: inline;
+}
